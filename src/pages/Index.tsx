@@ -299,7 +299,7 @@ const Index = () => {
                 <Icon name="MapPin" size={28} className="text-secondary flex-shrink-0" />
                 <div>
                   <h3 className="font-bold text-xl mb-2">Адрес:</h3>
-                  <p className="text-lg">г. Ярославль, ул. Театральная, д. 10</p>
+                  <p className="text-lg">г. Ярославль, ул. Победы, д. 38/27</p>
                 </div>
               </div>
               
@@ -307,7 +307,7 @@ const Index = () => {
                 <Icon name="Phone" size={28} className="text-secondary flex-shrink-0" />
                 <div>
                   <h3 className="font-bold text-xl mb-2">Телефон:</h3>
-                  <p className="text-lg">+7 (495) 123-45-67</p>
+                  <p className="text-lg">+7 (902) 331-06-36</p>
                 </div>
               </div>
               
