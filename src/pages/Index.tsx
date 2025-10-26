@@ -87,12 +87,7 @@ const Index = () => {
 
       <section 
         id="home" 
-        className="relative pt-32 pb-20 overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(180, 167, 214, 0.85), rgba(203, 195, 227, 0.75)), url('https://cdn.poehali.dev/projects/86484ea3-e9dc-47cc-823e-0aea0d1f04d1/files/62c0b207-49ab-48a5-b967-630a9b20e8b1.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
+        className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-primary/90 to-primary"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/20"></div>
         <div className="container mx-auto px-4 relative z-10">
