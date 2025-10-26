@@ -328,6 +328,24 @@ const Index = () => {
                 </div>
               </div>
 
+              <div className="pt-4 border-t border-white/20">
+                <h3 className="font-bold text-xl mb-4">Мы в соцсетях:</h3>
+                <a 
+                  href="https://m.vk.com/teatroscar_yaroslavl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 transition-colors px-6 py-3 rounded-lg"
+                >
+                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.45 14.41c-.37.75-1.07 1.16-1.75 1.16-.3 0-.62-.07-.95-.22-.96-.43-1.86-1.27-2.65-2.49-.61-.95-1.21-1.93-1.97-1.93-.09 0-.18.01-.28.03-.83.21-1.37 1.53-1.67 2.37-.15.42-.29.82-.45 1.1-.51.88-1.26 1.16-1.95 1.16-.3 0-.61-.07-.92-.2-1.67-.75-2.97-3.47-3.78-5.68-.39-1.05-.64-2.08-.64-2.64 0-.58.15-.99.45-1.25.25-.22.61-.34 1.02-.34.83 0 1.67.61 2.42 1.77.49.75.92 1.59 1.28 2.49.18-.54.46-1.07.82-1.49.61-.71 1.42-1.07 2.42-1.07 1.55 0 2.63.94 3.35 1.71.88.94 1.59 2.37 1.97 3.93.16.68.12 1.23-.11 1.63z"/>
+                  </svg>
+                  <div className="text-left">
+                    <div className="font-semibold">ВКонтакте</div>
+                    <div className="text-sm text-white/80">@teatroscar_yaroslavl</div>
+                  </div>
+                </a>
+              </div>
+
               <Button 
                 size="lg" 
                 className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold text-lg mt-6"
