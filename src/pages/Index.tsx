@@ -59,26 +59,26 @@ const Index = () => {
 
   const articles = [
     {
-      title: 'Как театр развивает эмоциональный интеллект ребёнка',
-      description: 'Узнайте, как занятия актёрским мастерством помогают детям лучше понимать свои эмоции и эмоции других людей.',
+      title: 'Как театр развивает эмоциональный интеллект',
+      description: 'Узнайте, как занятия актёрским мастерством помогают лучше понимать свои эмоции и эмоции других людей.',
       icon: 'Heart',
       readTime: '5 мин'
     },
     {
-      title: 'Почему застенчивым детям полезно заниматься театром',
+      title: 'Почему застенчивым людям полезно заниматься театром',
       description: 'Театральная студия — безопасное пространство для развития уверенности в себе и навыков общения.',
       icon: 'Users',
       readTime: '4 мин'
     },
     {
       title: 'Развитие речи через театральные игры',
-      description: 'Практические упражнения и игры, которые помогут вашему ребёнку говорить чётко и выразительно.',
+      description: 'Практические упражнения и игры, которые помогут говорить чётко и выразительно.',
       icon: 'MessageCircle',
       readTime: '6 мин'
     },
     {
-      title: 'Как поддержать ребёнка перед выступлением',
-      description: 'Советы родителям: что говорить и делать, чтобы помочь ребёнку справиться с волнением перед выступлением.',
+      title: 'Как справиться с волнением перед выступлением',
+      description: 'Советы и техники: что делать, чтобы справиться с волнением перед публичным выступлением.',
       icon: 'Lightbulb',
       readTime: '5 мин'
     }
@@ -250,8 +250,8 @@ const Index = () => {
 
       <section id="blog" className="py-20 bg-gradient-to-b from-muted/30 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-primary">Блог для родителей</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Полезные статьи о развитии детей через театр</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-primary">Блог для клиентов</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">Полезные статьи о развитии через театр</p>
           
           <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
             {articles.map((article, idx) => (
