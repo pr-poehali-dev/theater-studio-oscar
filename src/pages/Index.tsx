@@ -57,6 +57,33 @@ const Index = () => {
     { icon: 'MessageSquare', text: 'Чётко доносить информацию' }
   ];
 
+  const articles = [
+    {
+      title: 'Как театр развивает эмоциональный интеллект ребёнка',
+      description: 'Узнайте, как занятия актёрским мастерством помогают детям лучше понимать свои эмоции и эмоции других людей.',
+      icon: 'Heart',
+      readTime: '5 мин'
+    },
+    {
+      title: 'Почему застенчивым детям полезно заниматься театром',
+      description: 'Театральная студия — безопасное пространство для развития уверенности в себе и навыков общения.',
+      icon: 'Users',
+      readTime: '4 мин'
+    },
+    {
+      title: 'Развитие речи через театральные игры',
+      description: 'Практические упражнения и игры, которые помогут вашему ребёнку говорить чётко и выразительно.',
+      icon: 'MessageCircle',
+      readTime: '6 мин'
+    },
+    {
+      title: 'Как поддержать ребёнка перед выступлением',
+      description: 'Советы родителям: что говорить и делать, чтобы помочь ребёнку справиться с волнением перед выступлением.',
+      icon: 'Lightbulb',
+      readTime: '5 мин'
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
@@ -71,10 +98,10 @@ const Index = () => {
               <span className="font-bold text-2xl text-primary">ОСКАР</span>
             </div>
             <div className="hidden md:flex gap-6">
-              {['Главная', 'О студии', 'Курсы', 'Расписание', 'Контакты'].map((item, idx) => (
+              {['Главная', 'О студии', 'Курсы', 'Расписание', 'Блог', 'Контакты'].map((item, idx) => (
                 <button
                   key={idx}
-                  onClick={() => scrollToSection(['home', 'about', 'courses', 'schedule', 'contacts'][idx])}
+                  onClick={() => scrollToSection(['home', 'about', 'courses', 'schedule', 'blog', 'contacts'][idx])}
                   className="text-foreground/80 hover:text-primary font-semibold transition-colors"
                 >
                   {item}
@@ -217,6 +244,40 @@ const Index = () => {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" className="py-20 bg-gradient-to-b from-muted/30 to-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-primary">Блог для родителей</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">Полезные статьи о развитии детей через театр</p>
+          
+          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            {articles.map((article, idx) => (
+              <Card 
+                key={idx} 
+                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-primary/10 p-3 rounded-lg">
+                      <Icon name={article.icon} size={32} className="text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2 text-primary hover:text-primary/80 transition-colors">
+                        {article.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-3">{article.description}</p>
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <Icon name="Clock" size={16} />
+                        <span>{article.readTime}</span>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
