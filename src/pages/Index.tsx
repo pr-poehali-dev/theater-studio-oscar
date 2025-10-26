@@ -89,7 +89,7 @@ const Index = () => {
         id="home" 
         className="relative pt-32 pb-20 overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(91, 33, 182, 0.85), rgba(124, 58, 237, 0.75)), url('https://cdn.poehali.dev/projects/86484ea3-e9dc-47cc-823e-0aea0d1f04d1/files/62c0b207-49ab-48a5-b967-630a9b20e8b1.jpg')`,
+          backgroundImage: `linear-gradient(rgba(180, 167, 214, 0.85), rgba(203, 195, 227, 0.75)), url('https://cdn.poehali.dev/projects/86484ea3-e9dc-47cc-823e-0aea0d1f04d1/files/62c0b207-49ab-48a5-b967-630a9b20e8b1.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
