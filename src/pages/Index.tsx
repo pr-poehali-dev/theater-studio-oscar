@@ -93,7 +93,11 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <div className="mb-6 animate-fade-in">
-              <Icon name="Clapperboard" size={64} className="mx-auto mb-4 text-secondary animate-spotlight" />
+              <img 
+                src="https://cdn.poehali.dev/files/def688c6-ae35-4308-8a47-a7b574a4bc3d.jpg" 
+                alt="Оскар"
+                className="h-24 w-auto mx-auto mb-4 animate-spotlight"
+              />
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
               Театр-студия «ОСКАР»
